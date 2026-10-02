@@ -6,6 +6,6 @@ export function getCafes() {
     )
 }
 
-export function getCafesBySlug(slug) {
-    return cafes.find()
+export function getCafeBySlug(slug) {
+    return cafes.find(cafe => cafe.slug === slug)
 }
